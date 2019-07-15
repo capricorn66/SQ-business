@@ -1,0 +1,19 @@
+/* cards
+*******************************************************************/
+
+.card {
+    border-radius: 0;
+    .card-img-top {
+        border-radius: 0;
+    }
+    .card-body {
+        padding-bottom: 30px;
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .card-text {
+            line-height: 1.5em
+        }
+    }
+}

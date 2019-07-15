@@ -1,0 +1,48 @@
+/* footer
+*******************************************************************/
+
+footer {
+    background: $app-color-3;
+    color: white;
+    padding: 60px 0 20px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+
+    h4 {
+        color: $app-color-4;
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        display: block;
+        .nav-item {
+            display: block;
+            .nav-link {
+                color: white;
+                padding: 8px 0;
+                border-bottom: 1px solid $app-color-4;
+            }
+        }
+    }
+
+    .bottombar {
+        color: $app-color-4;
+        a {
+            color: $app-color-4;
+        }
+    }
+    .social-nav {
+        color: $app-color-4;
+        font-size: 28px;
+        margin-left: 12px;
+        vertical-align: middle;
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            color: $app-color-1;
+        }
+    }
+
+}

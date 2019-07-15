@@ -1,0 +1,147 @@
+/* header
+*******************************************************************/
+
+header {
+    .topbar {
+        background: $gray-100;
+        color: $gray-400;
+        padding: 8px 0;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        .container {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .social-nav {
+            color: $gray-400;
+            font-size: 22px;
+            margin-left: 8px;
+            vertical-align: middle;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                color: $app-color-1;
+            }
+        }
+    }
+
+    .navbar {
+        padding: 0.5rem 15px;
+        .navbar-brand {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            .logo {
+                height: auto;
+                width: 80px;
+                margin-right: 20px;
+            }
+            .brand {
+                height: auto;
+                width: 240px;
+            }
+
+            @media (max-width: 575px) {
+                margin-right: 0;
+                .logo {
+                    width: 50px;
+                    margin-right: 10px;
+                }
+                .brand {
+                    width: 165px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .logo {
+                    width: 70px;
+                    margin-right: 16px;
+                }
+                .brand {
+                    width: 200px;
+                }
+            }
+            @media (min-width: 1200px) {
+                .logo {
+                    width: 80px;
+                    margin-right: 20px;
+                }
+                .brand {
+                    width: 240px;
+                }
+            }
+        }
+
+        .collapsing,
+        .collapse {
+            @media (max-width: 991px) {
+                .btn {
+                    display: none;
+                }
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                &.active {
+                    .nav-link {
+                        color: $app-color-1
+                    }
+                }
+                .nav-link {
+                    color: $app-color-3;
+                    font-size: 16px;
+                    @media (max-width: 991px) {
+                        border-bottom: 1px solid white;
+                    }
+                    &:hover {
+                        color: $app-color-1
+                    }
+                }
+            }
+            @media (max-width: 991px) {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: $gray-100;
+                padding: 15px;
+                border-radius: 8px;
+            }
+        }
+
+        .navbar-toggler {
+            color: $app-color-3;
+            i {
+                font-size: 40px;
+            }
+            @media (max-width: 575px) {
+                margin-right: -15px;
+            }
+        }
+    }
+
+
+    @media (min-width: 576px) {
+
+
+    }
+
+    @media (min-width: 768px) {
+
+
+    }
+
+    @media (min-width: 992px) {
+
+
+    }
+
+    @media (min-width: 1200px) {
+
+    }
+
+
+}

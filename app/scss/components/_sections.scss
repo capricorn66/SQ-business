@@ -1,0 +1,263 @@
+/* sections
+*******************************************************************/
+
+section {
+    .h2,
+    h2 {
+        font-size: 30px;
+        font-weight: 900;
+        &::after {
+            content: "";
+            margin: 20px 0;
+            max-width: 300px;
+            height: 1px;
+            display: block;
+        }
+    }
+
+    .lead {
+        font-size: 20px;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+
+.services {
+    padding: 80px 0 50px;
+    @media (min-width: 768px) {
+        padding: 90px 0 60px;
+    }
+    @media (min-width: 1200px) {
+        padding: 100px 0 70px;
+    }
+
+    background: lighten($app-color-4, 20%);
+    h2 {
+        color: $app-color-3;
+        &::after {
+            background: $app-color-4;
+        }
+    }
+    h3 {
+        color: $app-color-3;
+        font-weight: 900;
+        margin-bottom: 40px;
+        font-size: 28px;
+        @media (min-width: 576px) {
+            font-size: 32px;
+        }
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+    }
+    .lead {
+        color: $app-color-3;
+    }
+
+    .card {
+        height: 100%;
+        .card-body {
+            position: relative;
+            margin-top: -40px;
+            padding-top: 20px;
+            background: $app-color-3;
+            color: white;
+            &::before {
+                content: attr(data-num);
+                font-size: 42px;
+                color: $app-color-3;
+                font-weight: 300;
+                position: absolute;
+                left: 0;
+                bottom: 100%;
+                margin-bottom: 0px;
+                display: block;
+                line-height: 1;
+                padding: 4px 10px 8px 15px;
+                background: white;
+            }
+            .card-title {
+                margin-right: 90px;
+            }
+        }
+    }
+}
+
+.callBack {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0 30px;
+    @media (min-width: 768px) {
+        padding: 70px 0 40px;
+    }
+    @media (min-width: 1200px) {
+        padding: 80px 0 50px;
+    }
+    position: relative;
+    color: white;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($app-color-3,.9);
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    h2 {
+        &::after {
+            background: white;
+        }
+    }
+}
+
+.mission {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0;
+    @media (min-width: 768px) {
+        padding: 70px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
+    position: relative;
+    overflow: hidden;
+    color: $app-color-3;
+    text-align: center;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(white,.9);
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.getStarted {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0;
+    @media (min-width: 768px) {
+        padding: 70px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
+    position: relative;
+    color: white;
+    text-align: center;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($app-color-3,.9);
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.testimonials {
+    padding: 60px 0;
+    @media (min-width: 768px) {
+        padding: 70px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 90px 0;
+    }
+    text-align: center;
+    color: $app-color-3;
+    font-size: 18px;
+    line-height: 1.5em;
+    .container {
+        position: relative;
+    }
+    h5 {
+        font-weight: 800;
+    }
+    .circle-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        margin: 0 auto 30px;
+    }
+    blockquote {
+        font-size: 20px;
+        line-height: 1.5em;
+        margin-bottom: 0;
+        &::after {
+            content: "\201D";
+            display: block;
+            font-size: 64px;
+            font-family: "Times New Roman", Serif;
+            line-height: 1.5;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        font-size: 64px;
+        top: 50%;
+        margin-top: -32px;
+        &:hover {
+            color: $app-color-1;
+        }
+    }
+
+    .swiper-pagination {
+        text-align: center;
+        margin-top: 30px;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 8px;
+            display: inline-block;
+            background: rgba($app-color-3,.4);
+            &.swiper-pagination-bullet-active {
+                background: $app-color-3;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+    @media (min-width: 992px) {
+        .swiper-pagination {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+
+
+}

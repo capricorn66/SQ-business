@@ -1,0 +1,129 @@
+/* jumbotron
+*******************************************************************/
+
+.jumbotron-sm {
+    height: 70px;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 470px;
+    @media (max-width: 575px) {
+        background-size: 120%;
+        background-position: center top;
+    }
+    @media (min-width: 576px) {
+        height: 530px;
+    }
+    @media (min-width: 768px) {
+        height: 580px;
+    }
+    @media (min-width: 992px) {
+        height: 640px;
+    }
+    @media (min-width: 1200px) {
+        height: 700px;
+    }
+
+    &.jumbotron-sm {
+        height: 130px;
+        &::after {
+            display: none;
+        }
+    }
+
+    .flurry-container {
+        opacity: .5;
+    }
+
+    border-radius: 0;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 60vw;
+        background: rgba($app-color-3,.6);
+        z-index: 11;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: 15px;
+        width: 60vw;
+        background: $app-color-4;
+    }
+    h1 {
+        background: rgba($app-color-3,.6);
+        padding: 30px 40px 40px 0;
+        color: white;
+        font-weight: 700;
+        position: relative;
+        font-size: 24px;
+        margin-bottom: 30px;
+        @media (max-width: 575px) {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 0;
+            background: $app-color-3;
+        }
+        @media (min-width: 576px) {
+            font-size: 28px;
+        }
+        @media (min-width: 768px) {
+            font-size: 32px;
+            margin-bottom: 40px;
+            max-width: 80%;
+            font-weight: 800;
+        }
+        @media (min-width: 992px) {
+            font-size: 38px;
+            margin-bottom: 50px;
+            font-weight: 900;
+            max-width: 77%;
+        }
+        @media (min-width: 1200px) {
+            font-size: 44px;
+            margin-bottom: 60px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 100%;
+            height: 100%;
+            background: rgba($app-color-3,.6);
+            width: 15px;
+
+            @media (min-width: 576px) {
+                width: calc( (100vw - 510px) / 2 );
+            }
+            @media (min-width: 768px) {
+                width: calc( (100vw - 690px) / 2 );
+            }
+            @media (min-width: 992px) {
+                width: calc( (100vw - 930px) / 2 );
+            }
+            @media (min-width: 1200px) {
+                width: calc( (100vw - 1110px) / 2 );
+            }
+
+        }
+    }
+}
