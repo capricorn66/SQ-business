@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=latin-ext" rel="stylesheet">
 
-</head>
+<link href="css/app.css" rel="stylesheet"><link href="css/app.a2f30dee8cb4feba7a28.min.css" rel="stylesheet"></head>
 <body>
 
     <header>
@@ -35,10 +35,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
@@ -48,134 +48,42 @@
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
-                    <button class="btn btn-lg btn-primary ml-40" type="button" onclick="$('.callBack').scrollTo()">Request call back</button>
+                    <button class="btn btn-lg btn-primary ml-40" type="button" data-toggle="modal" data-target="#callbackModal">Request call back</button>
                 </div>
             </div>
         </nav>
 
     </header>
 
-    <div class="jumbotron" style="background-image: url(images/we-take-care.png)">
+    <div class="jumbotron jumbotron-sm" style="background-image: url(images/we-take-care.png)"></div>
+
+    <nav aria-label="breadcrumb">
         <div class="container">
-            <h1><em>We take care</em> of your snow removal and de-icing, while you enjoy the warmth and comfort of staying inside!</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
         </div>
-    </div>
+    </nav>
 
-    <section class="services">
+    <main>
         <div class="container">
-
-            <div class="row">
-                <div class="col-lg-4 mb-30 pr-sm-60">
-                    <h2>Services</h2>
-                    <h3>We Go Where the Plow Trucks Can’t!</h3>
-                    <p class="lead">Our fully insured snow removal crew is reliable and ready to go wherever you need us-even where the snow plows can’t get to.</p>
-                </div>
-                <div class="col-lg-4 mb-30">
-                    <div class="card">
-                        <img src="images/services-1.png" class="card-img-top" alt="How our all-inclusive winter services work">
-                        <div class="card-body" data-num="1.">
-                            <h5 class="card-title">How our all-inclusive winter services work</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat posuere urna. Phasellus mattis rhoncus ante eu placerat. Curabitur purus ipsum, luctus in elementum quis, tristique id turpis. Donec sem est, mollis quis libero ac, tincidunt scelerisque eros. Aliquam erat volutpat. Sed non ultrices ligula.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-30">
-                    <div class="card">
-                        <img src="images/services-2.png" class="card-img-top" alt="Small service area so you get faster service">
-                        <div class="card-body" data-num="2.">
-                            <h5 class="card-title">Small service area so you get faster service</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat posuere urna. Phasellus mattis rhoncus ante eu placerat. Curabitur purus ipsum, luctus in elementum quis, tristique id turpis. Donec sem est, mollis quis libero ac, tincidunt scelerisque eros. Aliquam erat volutpat. Sed non ultrices ligula.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-30">
-                    <div class="card">
-                        <img src="images/services-3.png" class="card-img-top" alt="We use only Enviromentally friendly and organic compounds">
-                        <div class="card-body" data-num="3.">
-                            <h5 class="card-title">We use only Enviromentally friendly and organic compounds</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat posuere urna. Phasellus mattis rhoncus ante eu placerat. Curabitur purus ipsum, luctus in elementum quis, tristique id turpis. Donec sem est, mollis quis libero ac, tincidunt scelerisque eros. Aliquam erat volutpat. Sed non ultrices ligula.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-30">
-                    <div class="card">
-                        <img src="images/services-4.png" class="card-img-top" alt="Effective liability mitigation strategies">
-                        <div class="card-body" data-num="4.">
-                            <h5 class="card-title">Effective liability mitigation strategies</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat posuere urna. Phasellus mattis rhoncus ante eu placerat. Curabitur purus ipsum, luctus in elementum quis, tristique id turpis. Donec sem est, mollis quis libero ac, tincidunt scelerisque eros. Aliquam erat volutpat. Sed non ultrices ligula.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-30">
-                    <div class="card">
-                        <img src="images/services-5.png" class="card-img-top" alt="We worry for you, with 24 hour site monitoring">
-                        <div class="card-body" data-num="5.">
-                            <h5 class="card-title">We worry for you, with 24 hour site monitoring</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat posuere urna. Phasellus mattis rhoncus ante eu placerat. Curabitur purus ipsum, luctus in elementum quis, tristique id turpis. Donec sem est, mollis quis libero ac, tincidunt scelerisque eros. Aliquam erat volutpat. Sed non ultrices ligula.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <h1>What makes our snow removal unique?</h1>
+            <p class="lead">We are owned and managed entirely by women. Our skill sets include detail-oriented management, efficient operations, high-level communication with clients and staff, responsive and reliable client care with the warm-hearted spirit of a woman. We are focused specifically on the cities of Port Moody, Coquitlam and Port Coquitlam in order to provide optimal reliability and prompt service to include:</p>
+            <ul>
+                <li>Priority Commercial &amp; Strata snow removal, ice management and salting</li>
+                <li>All-inclusive pricing – <strong>Flat Rate with No Hidden Fees</strong></li>
+                <li>Unlimited snowfall &amp; freezing event coverage</li>
+                <li>Multiple visits performed for impactful snow storms and freezing</li>
+                <li>Emergency daytime response</li>
+                <li>Automatic dispatch service from first to last snowfall and freezing</li>
+                <li>Environmentally and pet friendly <a href="">organic de-icing agent</a></li>
+                <li">Condensed service area to guarantee services</li>
+                <li>Liability Mitigation Strategies</li>
+            </ul>
+            <p>We have over 200 hard-working men and women on standby, ready to serve you 24 hours a day, any day of the year! This makes us one of the largest winter services provider that focuses on areas where the snow plows can’t go.</p>
         </div>
-    </section>
-
-    <section class="callBack" style="background-image: url(images/call-back.png)">
-        <div class="container">
-
-            <div class="row align-items-end">
-                <div class="col-lg-7 mb-50">
-                    <h2 class="mb-40">Request call back</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="name">First name</label>
-                                <input type="text" class="form-control form-control-lg" id="name" placeholder="">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="phone">Phone number</label>
-                                <input type="text" class="form-control form-control-lg" id="phone" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group mb-40">
-                            <label for="service">Select service</label>
-                            <select class="custom-select custom-select-lg" id="service">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <button class="btn btn-lg btn-primary" type="submit">Send</button>
-                    </form>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mb-50">
-                    <p class="lead">Get started quicker, fill out additional information to get a quote. The more details we have in regards to your property, the quicker we can get started.</p>
-                    <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#quoteModal">Request a quote</button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="mission" style="background-image: url(images/snow.png)">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <div class="row justify-content-center mb-30">
-                <div class="col-lg-8">
-                    <p class="lead">
-                        Serving strata’s, commercial and retail properties since 2007, Snow Queen goes above and beyond to provide peace of mind, safety and serenity to our clients.  We offer comprehensive winter services, snow removal and ice melting, and liability prevention programs to the cities of Port Moody, Coquitlam and Port Coquitlam, BC.  Our contracts provide all inclusive, automatic dispatch snow removal, organic grade salting and any related winter care.
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-7 col-md-6 col-lg-4 col-xl-3">
-                    <img src="images/snow-queen.svg" alt="Snow Queen" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </section>
+    </main>
 
     <section class="getStarted" style="background-image: url(images/get-started.png)">
         <div class="container">
@@ -187,7 +95,11 @@
                         Don’t be left out in the cold!</p>
                 </div>
             </div>
-            <button class="btn btn-lg btn-primary" type="button" onclick="$('.callBack').scrollTo()">Request a quote</button>
+
+            <button class="btn btn-lg btn-primary ml-40" type="button" data-toggle="modal" data-target="#quoteModal">Request a quote</button>
+            <button class="btn btn-lg btn-primary ml-40" type="button" data-toggle="modal" data-target="#callbackModal">Request call back</button>
+
+
         </div>
     </section>
 
@@ -247,17 +159,17 @@
         </div>
     </section>
 
-    <footer>
 
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-40">
                     <div class="row justify-content-center mb-40">
                         <div class="col-6 col-sm-5 col-md-3 col-lg-9">
-                            <img src="images/snow-queen-logo.svg" alt="Snow Queen" class="logo">
-                            <img src="images/snow-queen-brand.svg" alt="Snow Queen" class="brand">
+                            <img src="images/snow-queen.svg" alt="Snow Queen" class="img-fluid">
                         </div>
                     </div>
+
                     <p class="mb-0">Sed lacinia venenatis nisi, eu hendrerit ex
                         condimentum non. Nullam sed lacus ex. Vivamus
                         in suscipit felis, aliquet sollicitudin turpis. Nulla in
@@ -300,22 +212,18 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="ml-md-auto bottombar">
+                        <strong>Mobile</strong>: 0 500 500 500 <span class="br-sm">•</span> <strong>e-mail</strong>: <a href="mailto:info@snowqueen.com">info@snowqueen.com</a>
+                        <span class="br-sm">•</span> <strong>find us on</strong>:
+                        <a href="" class="social-nav"><i class="icon-facebook"></i></a>
+                        <a href="" class="social-nav"><i class="icon-instagram"></i></a>
+                        <a href="" class="social-nav"><i class="icon-twitter"></i></a>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div class="bottombar">
-            <div class="container">
-                <div class="text-right">
-                    <strong>Mobile</strong>: 0 500 500 500 <span class="br-sm">•</span> <strong>e-mail</strong>: <a href="mailto:info@snowqueen.com">info@snowqueen.com</a>
-                    <span class="br-sm">•</span> <strong>find us on</strong>:
-                    <a href="" class="social-nav"><i class="icon-facebook"></i></a>
-                    <a href="" class="social-nav"><i class="icon-instagram"></i></a>
-                    <a href="" class="social-nav"><i class="icon-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-
     </footer>
 
     <!-- Modal -->
@@ -382,10 +290,59 @@
         </div>
     </div>
 
+    <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callbackModalTitle">Request call back</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+
+                            <div class="mb-30">
+                                <p>Snow removal and ice melting services trusted by strata’s, commercial and retail properties in Port Moody, Coquitlam and Port Coquitlam since 2007. Reliable and ready whenever you need us.  </p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="callback-name">Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="callback-name" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="callback-phone">Phone number</label>
+                                    <input type="text" class="form-control form-control-lg" id="callback-phone" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group mb-40">
+                                <label for="service">Select service</label>
+                                <select class="custom-select custom-select-lg" id="service">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="bs4-xs d-block d-sm-none"></div>
     <div class="bs4-sm d-none d-sm-block d-md-none"></div>
     <div class="bs4-md d-none d-md-block d-lg-none"></div>
     <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
     <div class="bs4-xl d-none d-xl-block"></div>
-</body>
+<script type="text/javascript" src="js/vendor.js"></script><script type="text/javascript" src="js/swiper.js"></script><script type="text/javascript" src="js/app.js"></script><script type="text/javascript" src="js/vendor.8da4f2f3541596f9ff21.min.js"></script><script type="text/javascript" src="js/swiper.f3aca6fe7abe485c27fc.min.js"></script><script type="text/javascript" src="js/app.a2f30dee8cb4feba7a28.min.js"></script></body>
 </html>

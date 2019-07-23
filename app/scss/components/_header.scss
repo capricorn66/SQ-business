@@ -3,8 +3,8 @@
 
 header {
     .topbar {
-        background: $gray-100;
-        color: $gray-400;
+        background: $app-color-3;
+        color: $gray-300;
         padding: 8px 0;
         @media (max-width: 767px) {
             display: none;
@@ -15,11 +15,21 @@ header {
             -ms-flex-align: center;
             align-items: center;
         }
+        a {
+            color: $white;
+            text-decoration: underline;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                color: $app-color-1;
+            }
+        }
         .social-nav {
-            color: $gray-400;
+            color: $white;
             font-size: 22px;
             margin-left: 8px;
             vertical-align: middle;
+            text-decoration: none;
             &:focus,
             &:hover {
                 text-decoration: none;
@@ -30,14 +40,16 @@ header {
 
     .navbar {
         padding: 0.5rem 15px;
+        background: $app-color-5;
         .navbar-brand {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-align: center;
             align-items: center;
+            padding: 10px 0;
             .logo {
                 height: auto;
-                width: 80px;
+                width: 70px;
                 margin-right: 20px;
             }
             .brand {
@@ -93,7 +105,7 @@ header {
                     }
                 }
                 .nav-link {
-                    color: $app-color-3;
+                    color: $white;
                     font-size: 16px;
                     @media (max-width: 991px) {
                         border-bottom: 1px solid white;

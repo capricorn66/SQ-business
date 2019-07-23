@@ -34,22 +34,27 @@ section {
 
     background: lighten($app-color-4, 20%);
     h2 {
-        color: $app-color-3;
+        color: $app-color-1;
+        font-size: 32px;
+        font-weight: 700;
+        @media (min-width: 576px) {
+            font-size: 36px;
+        }
+        @media (min-width: 768px) {
+            font-size: 42px;
+        }
+        @media (min-width: 992px) {
+            font-size: 48px;
+        }
         &::after {
-            background: $app-color-4;
+            background: $app-color-1;
         }
     }
     h3 {
         color: $app-color-3;
-        font-weight: 900;
+        font-weight: 700;
         margin-bottom: 40px;
-        font-size: 28px;
-        @media (min-width: 576px) {
-            font-size: 32px;
-        }
-        @media (min-width: 768px) {
-            font-size: 36px;
-        }
+        font-size: 22px;
     }
     .lead {
         color: $app-color-3;
@@ -66,7 +71,7 @@ section {
             &::before {
                 content: attr(data-num);
                 font-size: 42px;
-                color: $app-color-3;
+                color: $white;
                 font-weight: 300;
                 position: absolute;
                 left: 0;
@@ -75,7 +80,7 @@ section {
                 display: block;
                 line-height: 1;
                 padding: 4px 10px 8px 15px;
-                background: white;
+                background: $app-color-1;
             }
             .card-title {
                 margin-right: 90px;
@@ -104,7 +109,7 @@ section {
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba($app-color-3,.9);
+        background: rgba($app-color-5,.9);
     }
     .container {
         position: relative;
@@ -168,7 +173,7 @@ section {
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba($app-color-3,.9);
+        background: rgba($app-color-5,.9);
     }
     .container {
         position: relative;

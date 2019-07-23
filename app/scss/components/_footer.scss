@@ -2,17 +2,30 @@
 *******************************************************************/
 
 footer {
-    background: $app-color-3;
+    background: $app-color-5;
     color: white;
-    padding: 60px 0 20px;
+    padding: 60px 0 0;
 
     @media (max-width: 767px) {
         padding-bottom: 40px;
     }
 
     h4 {
-        color: $app-color-4;
+        color: lighten($app-color-3, 20%);
         margin-bottom: 30px;
+    }
+
+    .logo {
+        height: auto;
+        width: 110px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .brand {
+        height: auto;
+        max-width: 220px;
+        margin: 0 auto;
+        display: block;
     }
 
     .nav {
@@ -22,13 +35,15 @@ footer {
             .nav-link {
                 color: white;
                 padding: 8px 0;
-                border-bottom: 1px solid $app-color-4;
+                border-bottom: 1px solid $app-color-3;
             }
         }
     }
 
     .bottombar {
-        color: $app-color-4;
+        padding: 10px 0;
+        background: $app-color-3;
+        color: $white;
         a {
             color: $app-color-4;
         }

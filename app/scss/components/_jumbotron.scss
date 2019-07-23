@@ -10,22 +10,22 @@
     background-position: center center;
     background-size: cover;
     overflow: hidden;
-    height: 470px;
+    height: 390px;
     @media (max-width: 575px) {
         background-size: 120%;
         background-position: center top;
     }
     @media (min-width: 576px) {
-        height: 530px;
+        height: 400px;
     }
     @media (min-width: 768px) {
-        height: 580px;
+        height: 420px;
     }
     @media (min-width: 992px) {
-        height: 640px;
+        height: 440px;
     }
     @media (min-width: 1200px) {
-        height: 700px;
+        height: 500px;
     }
 
     &.jumbotron-sm {
@@ -67,12 +67,12 @@
         background: $app-color-4;
     }
     h1 {
-        background: rgba($app-color-3,.6);
+        background: rgba($app-color-3,.7);
         padding: 30px 40px 40px 0;
         color: white;
-        font-weight: 700;
+        font-weight: 500;
         position: relative;
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 30px;
         @media (max-width: 575px) {
             width: calc(100% + 30px);
@@ -92,14 +92,20 @@
             font-weight: 800;
         }
         @media (min-width: 992px) {
-            font-size: 38px;
+            font-size: 36px;
             margin-bottom: 50px;
-            font-weight: 900;
+            font-weight: 600;
             max-width: 77%;
         }
         @media (min-width: 1200px) {
-            font-size: 44px;
+            font-size: 38px;
             margin-bottom: 60px;
+        }
+
+        em {
+            font-style: normal;
+            color: $app-color-1;
+            font-weight: 800;
         }
 
         &::before {
