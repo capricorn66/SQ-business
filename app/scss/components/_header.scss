@@ -108,7 +108,7 @@ header {
                     color: $white;
                     font-size: 16px;
                     @media (max-width: 991px) {
-                        border-bottom: 1px solid white;
+                        border-bottom: 1px solid $app-color-5;
                     }
                     &:hover {
                         color: $app-color-1
@@ -118,14 +118,14 @@ header {
             @media (max-width: 991px) {
                 margin-top: 10px;
                 margin-bottom: 10px;
-                background: $gray-100;
+                background: $app-color-3;
                 padding: 15px;
                 border-radius: 8px;
             }
         }
 
         .navbar-toggler {
-            color: $app-color-3;
+            color: $white;
             i {
                 font-size: 40px;
             }
