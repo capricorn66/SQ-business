@@ -60,6 +60,14 @@ section {
         color: $app-color-3;
     }
 
+    @media (max-width: 767px) {
+        .group-sm-overflow {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
     .card {
         height: 100%;
         .card-body {
@@ -84,6 +92,9 @@ section {
             }
             .card-title {
                 margin-right: 90px;
+                @media (max-width: 575px) {
+                    margin-right: 0;
+                }
             }
         }
     }
