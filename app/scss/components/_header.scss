@@ -39,7 +39,7 @@ header {
     }
 
     .navbar {
-        padding: 0.5rem 15px;
+        padding: 0;
         background: $app-color-5;
         .navbar-brand {
             display: -ms-flexbox;
@@ -50,7 +50,7 @@ header {
             .logo {
                 height: auto;
                 width: 70px;
-                margin-right: 20px;
+                margin:5px 20px 5px 0;
             }
             .brand {
                 height: auto;
@@ -79,7 +79,7 @@ header {
             }
             @media (min-width: 1200px) {
                 .logo {
-                    width: 80px;
+                    width: 70px;
                     margin-right: 20px;
                 }
                 .brand {
