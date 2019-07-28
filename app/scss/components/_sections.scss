@@ -277,3 +277,45 @@ section {
 
 
 }
+
+.residential-service {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: $app-color-3;
+    padding: 60px 0;
+    @media (min-width: 768px) {
+        padding: 70px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($app-color-5,.7);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h2 {
+        color: $white;
+        font-size: 44px;
+        @media (max-width: 575px) {
+            font-size: 32px;
+        }
+        font-weight: 800;
+        margin-bottom: .8em;
+    }
+
+}
