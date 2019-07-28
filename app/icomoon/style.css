@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7ddvur');
-  src:  url('fonts/icomoon.eot?7ddvur#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7ddvur') format('truetype'),
-    url('fonts/icomoon.woff?7ddvur') format('woff'),
-    url('fonts/icomoon.svg?7ddvur#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?awx6ob');
+  src:  url('fonts/icomoon.eot?awx6ob#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?awx6ob') format('truetype'),
+    url('fonts/icomoon.woff?awx6ob') format('woff'),
+    url('fonts/icomoon.svg?awx6ob#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,6 +35,12 @@
 }
 .icon-snowflake1:before {
   content: "\e90d";
+}
+.icon-user:before {
+  content: "\e90e";
+}
+.icon-calendar:before {
+  content: "\e90f";
 }
 .icon-cancel:before {
   content: "\e900";

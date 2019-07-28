@@ -1,0 +1,76 @@
+/* blog
+*******************************************************************/
+
+.text-blog {
+    margin-bottom: 80px;
+    h1 {
+        font-size: 28px;
+    }
+    .data-and-author {
+        margin-bottom: 32px;
+    }
+    p {
+        margin-bottom: 2em;
+        line-height: 1.6em;
+    }
+    .tags {
+        border-bottom: 1px solid rgba($app-color-3, .3);
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        a {
+            border: 1px solid rgba($app-color-3, .4);
+            background: rgba($app-color-3, .06);
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: $app-color-3;
+            font-size: 13px;
+        }
+    }
+
+    .author-about {
+        margin-top: 40px;
+        .author-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 16px;
+        }
+        .author-name {
+            padding-top: 20px;
+            margin-left: 72px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.blog-nav {
+    padding: 20px 15px;
+    background: rgba($app-color-3, .06);
+    list-style: none;
+    margin: 0;
+    h4 {
+        font-size: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba($app-color-3, .3);
+    }
+    ul {
+        list-style: none;
+        margin: 20px 0 40px;
+        padding: 0;
+        a {
+            color: $app-color-3;
+            &:hover,
+            &.current {
+                color: $app-color-1;
+            }
+        }
+        &.tag-cloud {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}
